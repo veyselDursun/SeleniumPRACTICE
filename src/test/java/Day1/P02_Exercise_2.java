@@ -50,3 +50,9 @@ public class P02_Exercise_2 {
 
     }
 }
+    git init
+    git add .
+        git commit -m "Practice"
+        git branch -M main
+        git remote add origin https://github.com/veyselDursun/SeleniumPRACTICE.git
+        git push -u origin main
