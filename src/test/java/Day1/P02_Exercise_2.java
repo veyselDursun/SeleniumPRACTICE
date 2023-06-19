@@ -48,10 +48,10 @@ public class P02_Exercise_2 {
         String wiseTitle = driver.getTitle();
         System.out.println("wiseTitle=" + wiseTitle);
 
-        if (wiseTitle.contains("wisequarter")){
-            System.out.println("");
+        if (wiseTitle.contains("Quarter")){
+            System.out.println("Wise Title Testi Basarili");
         }else{
-            System.out.println("");
+            System.out.println("Wise Title Testi Basarisiz");
         }
 
 //10-Bir onceki web sayfamiza geri donelim
