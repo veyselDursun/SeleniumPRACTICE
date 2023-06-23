@@ -1,4 +1,4 @@
-package Day1_Tekrar;
+package tests.day01_tekrar;
 
 
 public class P03 {
