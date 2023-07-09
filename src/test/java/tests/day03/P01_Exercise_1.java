@@ -22,11 +22,14 @@ public class P01_Exercise_1 {
 
         driver.get("https://www.google.com");
         String actualTitle=driver.getTitle();
-        String expectedIcerik="google";
-        String expectedIcerik2="Google";
 
+        String expectedIcerik="google";
         Assert.assertFalse(actualTitle.contains(expectedIcerik));
+
+        String expectedIcerik2="Google";
         Assert.assertTrue(actualTitle.contains(expectedIcerik2));
+
+        System.out.println("TITLE: " + actualTitle);
         driver.close();
     }
 

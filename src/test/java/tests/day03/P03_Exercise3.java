@@ -24,7 +24,7 @@ public class P03_Exercise3 {
     @Before
     public void setUp(){
         WebDriverManager.chromedriver().setup();
-        driver=new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
@@ -46,10 +46,12 @@ public class P03_Exercise3 {
             checkBox1.click();
         }
         Thread.sleep(3000);
+
         if (!checkBox2.isSelected()){
             checkBox2.click();
         }
         Thread.sleep(3000);
+
         if (!checkBox3.isSelected()){
             checkBox3.click();
         }

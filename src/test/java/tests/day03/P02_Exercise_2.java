@@ -28,10 +28,10 @@ public class P02_Exercise_2 {
     @Test
     public void paraKarsilastir(){
         driver.get("https://www.google.com");
-        WebElement searchbox= driver.findElement(By.xpath("//*[@id='APjFqb']"));
+        WebElement searchbox = driver.findElement(By.xpath("//div[@class='YacQv']"));
 
         //Arama işlemini gerçekleştirelim
-        searchbox.sendKeys("usd to tl"+ Keys.TAB);
+        searchbox.sendKeys("usd to tl" + Keys.TAB);
         driver.findElement(By.xpath("(//input[@class='gNO89b'])[2]")).click();
         WebElement resultElement= driver.findElement(By.xpath("//*[@class='DFlfde SwHCTb']"));
 
@@ -39,11 +39,12 @@ public class P02_Exercise_2 {
         double sonuc =Double.parseDouble(result);
 
         Assert.assertTrue(sonuc<27.0);
-        if (sonuc<27){
-            System.out.println("Çok şükür 27 olmadı daha");
-        }else{
-            System.out.println("Allah Yardımcımız olsun");
-        }
+
+       if (sonuc<27){
+           System.out.println("Çok şükür 27 olmadı daha");
+       }else{
+           System.out.println("Allah Yardımcımız olsun");
+       }
     }
 
     @After
