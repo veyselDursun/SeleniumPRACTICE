@@ -17,9 +17,9 @@ import java.util.List;
 public class P04_Exercise_dragAndDrop {
 
 
-      //     https://the-internet.herokuapp.com/dropdown adresine gidin.
-      //    1.Index kullanarak Seçenek 1’i (Option 1) seçin ve yazdırın
-     //      2.Value kullanarak Seçenek 2'yi (Option 2) seçin ve yazdırın
+      //    https://the-internet.herokuapp.com/dropdown adresine gidin.
+      //   1.Index kullanarak Seçenek 1’i (Option 1) seçin ve yazdırın
+     //    2.Value kullanarak Seçenek 2'yi (Option 2) seçin ve yazdırın
      //    3.Visible Text(Görünen metin) kullanarak Seçenek 1’i (Option 1) seçin ve yazdırın
      //    4.Tüm dropdown değerleri(value) yazdırın
      //    5. Dropdown’un boyutunun 3 olduğunu test edin
@@ -46,7 +46,7 @@ public class P04_Exercise_dragAndDrop {
 
         //	1.Index kullanarak Seçenek 1’i (Option 1) seçin ve yazdırın
         WebElement dropDown= driver.findElement(By.xpath("//*[@id='dropdown']"));
-        Select select=new Select(dropDown);
+        Select select = new Select(dropDown);
         select.selectByIndex(1);
         System.out.println(select.getFirstSelectedOption().getText());
         Thread.sleep(2000);
